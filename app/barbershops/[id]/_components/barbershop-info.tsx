@@ -13,10 +13,13 @@ interface BarbershopInfoProps {
 }
 
 const BarbershopInfo = ({ barbershop }: BarbershopInfoProps) => {
+
     const router = useRouter();
+
     const handleBackClick = () => {
         router.replace('/')
     }
+    
     return ( 
         <div>
             <div className="h-[250px] w-full relative">
